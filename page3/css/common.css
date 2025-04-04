@@ -1,0 +1,352 @@
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+
+
+
+body{
+    font-family: 'NanumSquareRound', sans-serif;
+    width: 100%;
+    max-width: 1760px;
+    min-width: 1280;
+    margin: 0 auto;
+}
+p{
+    padding: 0;
+    margin:0;
+}
+
+header{
+ background-color: #60BEEE;
+ width:100%;
+ height: 62px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center; 
+}
+.header_left{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.header_right{
+    margin-right: 30px;
+}
+.header_left > h4{
+font-size: 28px;
+color: #fff;
+margin-left: 15px;
+text-shadow: 2px 2px 2px rgb(22, 157, 224);
+}
+section{
+    max-width: 1760px;
+    width: 100%;
+    overflow: visible !important;
+}
+.sec_title > h2 {
+    font-size: 44px;
+    display: flex;
+    margin-left: 46px;
+    font-weight: 800;
+    margin-top: 40px;
+}
+.sec_title > h2 > span{
+    color: #E36551;
+    display: block;
+    margin-right: 26px;
+}
+.swiper_contents{
+    width: 82.5%;
+    max-width: 1419px;
+    margin: 50px auto 0;
+    overflow: visible !important;
+}
+.swiper{
+   width: 100%;
+   height: 600px;
+}
+.swiper-slide{
+    background-color: #F6E2E8;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: visible !important;
+    will-change: transform;
+}
+
+
+/* 컨텐츠 */
+
+.row1{
+    width: 90%;
+    position: absolute;
+    top:-20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+.sound_right{
+    display: flex;
+    align-items: center;
+}
+.pop_wrap{
+    position: relative;
+    display: inline-block;
+}
+.song_charicter{
+    position: absolute;
+    top:-2px;
+    left: 8px;
+    width: 50px;
+}
+.song_btn {
+    width: 9rem;
+    text-align: right;
+    margin-right: 10px;
+    background-color: #58B8B0;
+    border: 2px solid #349F96;
+    color: white;
+    padding: 0px 12px;
+    border-radius: 99px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+/* 음악 플레이 리스트 */
+.player {
+    background: #e67e22;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.btn_play {
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn_pause{
+    background: white;
+    border-radius: 50%;
+    border: none;
+    padding: 9px 13px;
+    cursor: pointer;
+}
+.progress-bar {
+    flex-grow: 1;
+    background: yellow;
+    height: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.progress {
+    background: red;
+    height: 5px;
+    width: 0;
+}
+.time {
+    color: white;
+    font-size: 14px;
+    min-width: 70px;
+}
+
+.middle_section{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 120px;
+}
+.midle_left{
+    display: flex;
+    width: 40%;
+
+}
+.midle_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    /* border: 1px solid red; */
+}
+.midle_center >p:nth-child(2){
+    margin: 80px 0;
+}
+.midle_right{
+    margin-left: 50px;
+    width: 40%;
+}
+.midle_right > h2{
+    color: #7E0B0A;
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+.balloon_back{
+    width: 278px;
+    height: 224px;
+    background: url(../images/balloon_box.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+    word-break: keep-all;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+.balloon_back>p{
+    margin-top: -40px;
+}
+
+.boy{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+/* 체크박스 */
+.checkbox-group{
+    display: flex;
+
+}
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 70px;
+    font-size: 38px;
+    font-weight: 700;
+    margin-right: 60px;
+
+}
+.custom-checkbox input {
+    display: none; 
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: white;
+    border: 2px solid #C5B5BA;
+    border-radius: 4px;
+}
+
+/* 체크되었을 때 파란색 체크 이미지 적용 */
+.custom-checkbox input:checked + .checkmark {
+    background-image: url('../images/blue-check.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.text_input_wrap
+{
+    margin-top: 100px;
+}
+.text_input_wrap > input{
+    margin-top: 50px;
+    width: 90%;
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+
+/* 팝업 스타일 */
+.popup {
+    display: none; /* 기본적으로 숨김 */
+    position: fixed;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+/* 팝업 내용 */
+.popup-content {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* 팝업 헤더 */
+.popup-header {
+    background: #23965E;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popup-header > span {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+}
+.popup-header > span >img{
+    width: 2.5rem;
+    margin-right: 10px;
+}
+
+/* 닫기 버튼 */
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* 팝업 본문 */
+.popup-body {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.popup-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popup-body li {
+    margin-bottom: 10px;
+    font-size: 2.3rem;
+}
+.popup-body li > span{
+    color: #23965E;
+    margin-right: 30px;
+
+}
+.popup-body ul li > i{
+    font-style: normal;
+    display: inline-block;
+}
+
+/* 2/4 박자 스타일 */
+.time-signature {
+    font-size: 22px;
+    font-weight: bold;
+}
